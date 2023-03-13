@@ -503,15 +503,38 @@ section {
 }
 
 .footer-top a {
-  color: #777;
+  color: #484848;
 }
 
 .footer-top a:hover {
-  color: #FDFFEF;
+  color: #8357E8;
 }
 
 .footer-top img {
   width: 100px;
+}
+
+.logo-img {
+  margin-left: 30px;
+}
+
+.footer-widget {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social-nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.social-icon {
+  width: 25px !important;
+  height: 25px !important;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 10px;
 }
 
 .footer-bottom {
@@ -523,11 +546,6 @@ section {
 
 .footer-bottom p {
   margin: 0;
-}
-
-.footer-widget, .footer-social {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 /* MENU */
@@ -554,5 +572,48 @@ section {
 }
 /* REGISTRATION */
 /* PROFILE */
+/* Global styles */
+h1 {
+  color: #8357E8;
+  margin-bottom: 20px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.form-group label {
+  color: #8357E8;
+  margin-bottom: 5px;
+}
+.form-group input[type=text], .form-group input[type=email], .form-group input[type=tel], .form-group input[type=password] {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+.form-group input[type=text]:focus, .form-group input[type=email]:focus, .form-group input[type=tel]:focus, .form-group input[type=password]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #8357E8;
+}
+
+button[type=submit] {
+  background-color: #8357E8;
+  border: none;
+  border-radius: 5px;
+  color: #FDFFEF;
+  cursor: pointer;
+  font: "Poppins", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
