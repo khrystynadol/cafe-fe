@@ -31,14 +31,14 @@
 }
 
 .secondary-btn:hover {
-  background-color: #FDFFEF;
+  background-color: rgb(253, 255, 240);
   color: #8357E8;
 }
 
 .red-btn {
   color: #E32626;
   border-color: #E32626;
-  background-color: transparent;
+  background-color: rgb(253, 255, 240);
   padding: 12px 10px;
 }
 
@@ -184,7 +184,7 @@
 }
 
 .form-bold-line {
-  background: #FDFFEF;
+  background: rgb(253, 255, 240);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -207,7 +207,7 @@
 body, html {
   font-family: "Poppins", sans-serif;
   color: #8357E8;
-  background-color: #FDFFEF;
+  background-color: rgb(253, 255, 240);
   line-height: 1.8;
   font-size: 16px;
   margin: 0;
@@ -486,7 +486,7 @@ section {
 
 /* FOOTER */
 .footer-top {
-  background-color: #FDFFEF;
+  background-color: rgb(253, 255, 240);
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #8357E8;
@@ -533,7 +533,7 @@ section {
 }
 
 .footer-bottom {
-  background-color: #FDFFEF;
+  background-color: rgb(253, 255, 240);
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -641,6 +641,10 @@ section {
 
 tr {
   color: #FDFFEF;
+}
+
+.buttons {
+  margin-bottom: 10px;
 }
 
 /* Global styles */
