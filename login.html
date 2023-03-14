@@ -6,7 +6,6 @@
 <!--    <link rel="stylesheet" href="/style-1.css">-->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
 <nav class="navbar colored-navbar">
     <div class="container">
         <a href="#" class="logo">
@@ -14,15 +13,16 @@
             <p class="cafe-name">The Lavender cafe</p>
         </a>
         <ul class="nav-items">
-            <li><a href="#home" class="nav-item">Home</a></li>
-            <li><a href="#menu" class="nav-item">Menu</a></li>
-            <li><a href="#about" class="nav-item">About</a></li>
-            <li><a href="#contact" class="nav-item">Contact</a></li>
-            <li><a href="#profile" class="nav-item">Profile</a></li>
+            <li><a href="index.html#home" class="nav-item">Home</a></li>
+            <li><a href="menu.html" class="nav-item">Menu</a></li>
+            <li><a href="index.html#about" class="nav-item">About</a></li>
+            <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+            <li><a href="profile.html" class="nav-item">Profile</a></li>
         </ul>
         <div class="nav-toggler"><i class="ri-menu-fill"></i></div>
     </div>
 </nav>
+<body>
 <div class='form-bold-line'></div>
 <div class='form-container'>
     <div class='form-window'>
@@ -38,27 +38,52 @@
                 </label>
             </div>
             <div class="center-btn"><button class='primary-btn'>Login</button></div>
-            <div class='form-spacing'>Haven't registered yet? <span class='form-highlight'>Sign up</span></div>
+            <div class='form-spacing'>Haven't registered yet? <a href="registration.html"><span class='form-highlight'>Sign up</span></a></div>
         </div>
     </div>
 </div>
-<!--<div class="container">-->
-<!--    <div class="form">-->
-<!--        <form action="#" class="login-form">-->
-<!--            <input type="text" name="username" placeholder="Username">-->
-<!--            <input type="text" name="password" placeholder="Password">-->
-<!--            <button type="submit" class="btn">Login</button>-->
-<!--            <p class="message">Already registered?<a href="#"> Sign in</a></p>-->
-<!--        </form>-->
-<!--        <form action="#" class="register-form">-->
-<!--            <input type="text" name="email" placeholder="Email">-->
-<!--            <input type="text" name="password" placeholder="Password">-->
-<!--            <button type="submit" class="btn">Submit</button>-->
-<!--            <p class="message">New User? <a href="#">Create an account</a></p>-->
-<!--        </form>-->
-<!--    </div>-->
-<!--</div>-->
 </body>
+<!-- FOOTER -->
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="four-col-grid">
+                <div class="footer-widget">
+                    <img class="logo-img" src="images/logo.png" alt="">
+                </div>
+                <div class="footer-widget">
+                    <h5 class="h4">The Lavender Cafe</h5>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h5 class="h4">Follow us:</h5>
+                    <ul class="social-nav">
+                        <li>
+                            <a href="https://www.instagram.com/khrystyna_dol" class="social-nav-link" target="_blank">
+                                <img class="social-icon" src="./images/instagram.png" alt="The Lavender Cafe - Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/hrystyna.dol" class="nav-link" target="_blank">
+                                <img class="social-icon" src="./images/facebook.png" alt="The Lavender Cafe - Facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="simple-text">© Copyright 2023 The Lavender Cafe. All rights reserved. Designed by Khrystyna Dolynska</p>
+    </div>
+</footer>
 </html>
 
 <!--<!DOCTYPE html>-->

@@ -110,7 +110,7 @@
   justify-content: center;
   background: #FDFFEF;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .form-content {
@@ -276,12 +276,6 @@ a:hover {
 
 img {
   width: 100%;
-}
-
-p {
-  color: #444246;
-  font-size: 35px;
-  /*margin-bottom: 16px;*/
 }
 
 ul {
@@ -476,6 +470,7 @@ section {
 
 /* ABOUT */
 .simple-text {
+  color: #484848;
   font-size: 18px;
 }
 
@@ -549,7 +544,42 @@ section {
 }
 
 /* MENU */
-/* LOGIN */
+.intro-text {
+  max-width: 600px;
+  margin: 50px auto 50px auto;
+  text-align: center;
+}
+
+.menu-member .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-container {
+  width: 100%;
+  max-width: 1980px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.menu-description {
+  font-size: 18px;
+  color: #484848;
+}
+
+.hover-effect {
+  transition: all 0.4s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-bottom-color: #8357E8;
+}
+
+/* LOGIN */ /* REGISTRATION */
 .form-overlay {
   background: linear-gradient(#8357E8, #c5b6e8);
   opacity: 0.85;
@@ -570,50 +600,49 @@ section {
     height: 100%;
   }
 }
-/* REGISTRATION */
 /* PROFILE */
-/* Global styles */
-h1 {
-  color: #8357E8;
-  margin-bottom: 20px;
+.profile-card {
+  margin-top: 120px;
+  margin-left: 100px;
+  font-size: 28px;
+  padding: 0 10px;
+  width: 58%;
 }
 
-form {
-  display: inline-block;
-  text-align: left;
-  width: 100%;
+.profile-card h2 {
+  color: #8357E8;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
+.profile-card .card {
+  background: linear-gradient(#8357E8, #c5b6e8);
+  border-radius: 18px;
+  box-shadow: 1px 1px 8px 0 grey;
+  height: auto;
   margin-bottom: 20px;
-  text-align: left;
+  padding: 20px 0 20px 50px;
 }
-.form-group label {
-  color: #8357E8;
-  margin-bottom: 5px;
-}
-.form-group input[type=text], .form-group input[type=email], .form-group input[type=tel], .form-group input[type=password] {
+
+.profile-card .card table {
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   font-size: 16px;
-  padding: 10px;
-  width: 100%;
-}
-.form-group input[type=text]:focus, .form-group input[type=email]:focus, .form-group input[type=tel]:focus, .form-group input[type=password]:focus {
-  outline: none;
-  box-shadow: 0 0 5px #8357E8;
+  height: 270px;
+  width: 80%;
 }
 
-button[type=submit] {
-  background-color: #8357E8;
-  border: none;
-  border-radius: 5px;
+.edit {
+  position: absolute;
   color: #FDFFEF;
-  cursor: pointer;
-  font: "Poppins", sans-serif;
+  right: 14%;
 }
+
+tr {
+  color: #FDFFEF;
+}
+
+/* Global styles */
 
 /*# sourceMappingURL=styles.css.map */
