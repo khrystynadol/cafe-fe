@@ -7,7 +7,7 @@ $secondary-color: #FDFFEF;
 $gradient-color: #c5b6e8;
 $red-color: #E32626;
 $text-color: #484848;
-$background-color: #FDFFEF;
+$background-color: rgb(253, 255, 240);
 $primary-background-image: url(./images/background_image_dark.png);
 
 /* Variables for fonts */
@@ -53,7 +53,7 @@ $primary-text-size: 18px;
 .red-btn {
   color: $red-color;
   border-color: $red-color;
-  background-color: transparent;
+  background-color: $background-color;
   padding: 12px 10px;
 }
 
@@ -690,6 +690,10 @@ body, html {
 
 tr {
   color: #FDFFEF;
+}
+
+.buttons {
+  margin-bottom: 10px;
 }
 
 /* Global styles */
