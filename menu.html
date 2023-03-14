@@ -5,7 +5,6 @@
     <title>Menu Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
 <nav class="navbar colored-navbar">
     <div class="container">
         <a href="#" class="logo">
@@ -13,79 +12,107 @@
             <p class="cafe-name">The Lavender cafe</p>
         </a>
         <ul class="nav-items">
-            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="index.html#home" class="nav-item">Home</a></li>
             <li><a href="#menu" class="nav-item">Menu</a></li>
-            <li><a href="#about" class="nav-item">About</a></li>
-            <li><a href="#contact" class="nav-item">Contact</a></li>
-            <li><a href="#profile" class="nav-item">Profile</a></li>
+            <li><a href="index.html#about" class="nav-item">About</a></li>
+            <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+            <li><a href="profile.html" class="nav-item">Profile</a></li>
         </ul>
         <div class="nav-toggler"><i class="ri-menu-fill"></i></div>
     </div>
 </nav>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="section-title text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                <h1 class="color-white">
-                    OUR MENU              </h1>
+<body>
+<section id="menu">
+    <div class="menu-container">
+        <div class="intro-text">
+            <h1 class="h2">Our Menu</h1>
+<!--            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>-->
+        </div>
+        <div class="four-col-grid">
+            <div class="menu-member hover-effect">
+                <img src="./images/lavender-latte.jpg" alt="">
+                <div class="content">
+                    <h4 class="h5">Lavender latte</h4>
+                    <p class="simple-text">Enjoy a fragrant Lavender Latte made with freshly brewed espresso and lavender-infused milk.</p>
+                </div>
             </div>
-            <div class="section-subtitle text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <h2>
-                    ENJOY  <span class="color-green">THE BEST</span>              </h2>
+            <div class="menu-member hover-effect">
+                <img src="./images/ice-cream-muffin.jpg" alt="">
+                <div class="content">
+                    <h4 class="h5">Ice cream muffin</h4>
+                    <p class="simple-text">Satisfy your sweet tooth with our Ice Cream Muffin, which features a warm, moist muffin topped with a scoop of creamy ice cream</p>
+                </div>
             </div>
-            <div class="section-navigation aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="category-1-tab" data-bs-toggle="tab" data-bs-target="#category-1" type="button" role="tab" aria-controls="category-" aria-selected="true">
-                            CROISSANT SANDWICHES                    </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link " id="category-2-tab" data-bs-toggle="tab" data-bs-target="#category-2" type="button" role="tab" aria-controls="category-" aria-selected="false">
-                            SWEET CROISSANTS                    </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link " id="category-3-tab" data-bs-toggle="tab" data-bs-target="#category-3" type="button" role="tab" aria-controls="category-" aria-selected="false">
-                            DRINKS                    </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link " id="category-4-tab" data-bs-toggle="tab" data-bs-target="#category-4" type="button" role="tab" aria-controls="category-" aria-selected="false">
-                            CREATE YOUR OWN                    </button>
-                    </li>
-                </ul>
+            <div class="menu-member hover-effect">
+                <img src="./images/caramel-coffee.jpg" alt="">
+                <div class="content">
+                    <h4 class="h5">Caramel coffee</h4>
+                    <p class="simple-text">Sip on our rich and smooth Caramel Coffee, made with freshly brewed coffee and a drizzle of sweet caramel.</p>
+                </div>
             </div>
-            <div class="section-content">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane show active" id="category-1" role="tabpanel" aria-labelledby="category-1-tab">
-                        <div class="row custom-gy-30">
-                            <div class="col-md-6 col-lg-4 col-xxl-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-offset="-150">
-                                <div class="product-block croissant">
-                                    <div class="block-image">
-                                        <img src="https://lvivcroissants.com/ua/wp-content/uploads/sites/3/2022/06/chiz-1.png" alt="">
-                                    </div>
-                                    <div class="block-content">
-                                        <div class="row align-items-center align-items-lg-start justify-content-between">
-                                            <div class="col-8">
-                                                <div class="block-title">Cheeseburger</div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <div class="block-price">89 uah</div>
-                                            </div>
-                                        </div>
-                                        <div class="block-description">
-                                            <p>Croissant, Beef cutlet, Toast Cheese, Iceberg lettuce, Tomato, Pickled Cucumber, Onion crunch, Spicy Sauce / Burger Sauce</p>                                  </div>
-                                        <div class="block-calories">
-                                            <span>250 g | 293 kcal / 100 g</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+            <div class="menu-member hover-effect">
+                <img src="./images/belgium-waffle.jpg" alt="">
+                <div class="content">
+                    <h4 class="h5">Belgium waffle</h4>
+                    <p class="simple-text">Indulge in our classic Belgium Waffle, served with a generous dollop of whipped cream and fresh berries.</p>
+                </div>
+            </div>
+            <div class="menu-member hover-effect">
+                <img src="./images/lavender-macaroon-white.jpg" alt="">
+                <div class="content">
+                    <h4 class="h5">White lavender macaroon</h4>
+                    <p class="simple-text">Treat yourself to our delicate and sweet macaroon, which features a soft and chewy cookie filled with creamy white chocolate ganache.</p>
+                </div>
+            </div>
+            <div class="menu-member hover-effect">
+                <img src="./images/berry-pie.jpg" alt="">
+                <div class="content">
+                    <h4 class="h5">Berry pie</h4>
+                    <p class="simple-text">Delight in our mouthwatering Berry Pie, made with a flaky crust and filled with a medley of fresh berries.</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 </body>
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="four-col-grid">
+                <div class="footer-widget">
+                    <img class="logo-img" src="images/logo.png" alt="">
+                </div>
+                <div class="footer-widget">
+                    <h5 class="h4">The Lavender Cafe</h5>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h5 class="h4">Follow us:</h5>
+                    <ul class="social-nav">
+                        <li>
+                            <a href="https://www.instagram.com/khrystyna_dol" class="social-nav-link" target="_blank">
+                                <img class="social-icon" src="./images/instagram.png" alt="The Lavender Cafe - Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/hrystyna.dol" class="nav-link" target="_blank">
+                                <img class="social-icon" src="./images/facebook.png" alt="The Lavender Cafe - Facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="simple-text">© Copyright 2023 The Lavender Cafe. All rights reserved. Designed by Khrystyna Dolynska</p>
+    </div>
+</footer>
 </html>
