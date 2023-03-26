@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User list</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="sidebar">
+  <a href="#" class="logo">
+    <img src="images/logo.png" alt="">
+    <p class="cafe-name h3">The Lavender cafe</p>
+  </a>
+  <ul class="nav-links">
+    <li>
+      <a href="admin.html" class="active">
+        <i class='bx bx-grid-alt' ></i>
+        <span class="links-name h2">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="add_item.html">
+        <i class='bx bx-add-to-queue' ></i>
+        <span class="links-name">Add menu item</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-box' ></i>
+        <span class="links-name">Product</span>
+      </a>
+    </li>
+    <li>
+      <a href="order_list.html">
+        <i class='bx bx-list-ul' ></i>
+        <span class="links-name">Order list</span>
+      </a>
+    </li>
+    <li>
+      <a href="user_list.html">
+        <i class='bx bx-user' ></i>
+        <span class="links-name">User list</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-pie-chart-alt-2' ></i>
+        <span class="links-name">Analytics</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-coin-stack' ></i>
+        <span class="links-name">Stock</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-book-alt' ></i>
+        <span class="links-name">Total order</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-message' ></i>
+        <span class="links-name">Messages</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="links-name">Setting</span>
+      </a>
+    </li>
+    <li class="log-out">
+      <a href="#">
+        <i class='bx bx-log-out'></i>
+        <span class="links-name">Log out</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+  <nav>
+    <div class="sidebar-button">
+      <i class='bx bx-menu sidebarBtn'></i>
+      <span class="dashboard">Dashboard</span>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <i class='bx bx-search' ></i>
+    </div>
+  </nav>
+
+  <div class="home-content">
+    <div class="sales-boxes">
+      <div class="top-sales box">
+        <div class="title">User list</div>
+        <ul class="top-sales-details">
+          <li>
+            <a href="profile.html">
+              <span class="user_name">Khrystyna Dolynska</span>
+            </a>
+            <span class="role">admin</span>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="user_name">John Smith</span>
+            </a>
+            <span class="role">user</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".sidebarBtn");
+  sidebarBtn.onclick = function() {
+    sidebar.classList.toggle("active");
+    if(sidebar.classList.contains("active")){
+      sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+    }else
+      sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+  }
+</script>
+</body>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <p class="simple-text h5">© Copyright 2023 The Lavender Cafe. All rights reserved. Designed by Khrystyna Dolynska</p>
+  </div>
+</footer>
+</html>

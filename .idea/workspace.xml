@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4681d3f-c473-4e84-a873-a2b68fb2993b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/lab-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab-1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.scss" afterDir="false" />
@@ -43,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Study/4 term/Web technologies and web design/lab-1",
+    "last_opened_file_path": "D:/Study/4 term/Web technologies and web design/lab-1/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,8 +61,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Study\4 term\Web technologies and web design\lab-1" />
       <recent name="D:\Study\4 term\Web technologies and web design\lab-1\images" />
+      <recent name="D:\Study\4 term\Web technologies and web design\lab-1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Study\4 term\Web technologies and web design\lab-1" />
@@ -72,7 +78,13 @@
       <updated>1678477694042</updated>
       <workItem from="1678477695189" duration="864000" />
       <workItem from="1678478570295" duration="26538000" />
-      <workItem from="1678638649921" duration="33613000" />
+      <workItem from="1678638649921" duration="39128000" />
+      <workItem from="1678870076724" duration="2474000" />
+      <workItem from="1678917435256" duration="1191000" />
+      <workItem from="1678983150734" duration="2001000" />
+      <workItem from="1679035027417" duration="25055000" />
+      <workItem from="1679505024345" duration="1107000" />
+      <workItem from="1679855128430" duration="6516000" />
     </task>
     <servers />
   </component>
