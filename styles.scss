@@ -129,13 +129,6 @@ a:hover {
   color: $secondary-color;
 }
 
-a:-webkit-any-link {
-  color: $text-color;
-}
-a:-webkit-any-link:hover {
-  color: $primary-color;
-}
-
 img {
   width: 100%;
 }
@@ -1473,6 +1466,13 @@ form .button input:hover{
   font-size: 17px;
   font-weight: 400;
   color: $text-color !important;
+}
+
+.sales-boxes a:-webkit-any-link {
+  color: $text-color;
+}
+.sales-boxes a:-webkit-any-link:hover {
+  color: $primary-color;
 }
 
 /* Global styles */
