@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -94,52 +95,86 @@
             <i class='bx bx-menu sidebarBtn'></i>
             <span class="dashboard h3">Add menu item</span>
         </div>
-        <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <i class='bx bx-search' ></i>
-        </div>
+<!--        <div class="search-box">-->
+<!--            <label>-->
+<!--                <input type="text" placeholder="Search...">-->
+<!--            </label>-->
+<!--            <i class='bx bx-search' ></i>-->
+<!--        </div>-->
     </nav>
     <div class="form-container">
         <div class="title">Item info</div>
         <div class="content">
-            <form action="#">
+            <form id="add-item-form" action="#">
                 <div class="user-details">
                     <div class="input-box">
                         <label>
-                            <input type="text" placeholder="Enter item name" class='input-field full-width no-border' required>
+                            <input id="name" type="text" placeholder="Enter item name" class='input-field full-width no-border' required>
                         </label>
                     </div>
                     <div class="input-box">
                         <label>
-                            <input type="text" placeholder="Enter item description" class='input-field full-width no-border' required>
+                            <input id="description" type="text" placeholder="Enter item description" class='input-field full-width no-border' required>
+                            <!--<textarea id="description" name="description" placeholder="Write description.." style="height:200px"></textarea>-->
                         </label>
                     </div>
                     <div class="input-box">
                         <label>
-                            <input type="text" placeholder="Enter item weight" class='input-field full-width no-border' required>
+                            <input id="weight" type="text" placeholder="Enter item weight" class='input-field full-width no-border' required>
                         </label>
                     </div>
                     <div class="input-box">
                         <label>
-                            <input type="text" placeholder="Enter item price" class='input-field full-width no-border' required>
+                            <input id="price" type="text" placeholder="Enter item price" class='input-field full-width no-border' required>
                         </label>
                     </div>
-                    <div class="input-box new-line">
+                    <div class="input-box">
                         <label>
-                            <input type="text" placeholder="Enter ingredients list" class='input-field full-width no-border' required>
+                            <input id="percent" type="text" placeholder="Enter percent" class='input-field full-width no-border' required>
                         </label>
                     </div>
-                    <div class="upload-photo">
-                        <div class="h6 upload-txt">Select item photo</div>
-                        <span class="primary-btn secondary-btn">Select a file</span>
+                    <div class="input-box">
+                        <label>
+                            <input id="availability" type="text" placeholder="Enter number of available items" class='input-field full-width no-border' required>
+                        </label>
                     </div>
+                    <div class="upload-photo input-box">
+                        <input id="picture_data" type="file" name="picture_data" />
+                    </div>
+<!--                    <form id="upload-photo">-->
+<!--                        <input id="picture_data" type="file" name="picture_data" />-->
+<!--                    </form>-->
+
+                    <label class="title-2">Ingredients list:</label>
+                    <div id="ingredient-list">
+                        <div class="ingredient">
+                            <div class="input-box">
+                                <label>
+                                    <input type="text" name="ingredient-name[]" class='input-field full-width no-border' placeholder="Enter name">
+                                </label>
+                            </div>
+                            <div class="input-box">
+                                <label>
+                                    <input type="text" name="ingredient-weight[]" class='input-field full-width no-border' placeholder="Enter weight">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <span type="click" id="add-ingredient" class="primary-btn secondary-btn ingredient-btn">Add Ingredient</span>
                 </div>
-                <div class="center-btn"><button class='primary-btn'>Add item</button></div>
+                <div class="center-btn"><button type="submit" class='primary-btn'>Add item</button></div>
+<!--                <form action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">-->
+<!--                    <input id="picture_data" type="file" name="picture_data" />-->
+<!--                    <input type="submit" class='primary-btn secondary-btn' value="Upload a file"/>-->
+<!--                    <button type="button" class='primary-btn secondary-btn'>Upload photo</button>-->
+<!--                </form>-->
             </form>
         </div>
     </div>
 </section>
-<script>
+<script src="add_item.js" type="module"></script>
+<script src="add_ingredient.js" type="module"></script>
+<script type="module">
     let sidebar = document.querySelector(".sidebar");
     let sidebarBtn = document.querySelector(".sidebarBtn");
     sidebarBtn.onclick = function() {
@@ -158,4 +193,171 @@
     </div>
 </footer>
 </html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" dir="ltr">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title> Add item </title>-->
+<!--    <link rel="stylesheet" href="styles.css">-->
+<!--    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--</head>-->
+<!--<body class="gradient-body">-->
+<!--<div class="sidebar">-->
+<!--    <a href="index.html" class="logo">-->
+<!--        <img src="images/logo.png" alt="">-->
+<!--        <p class="cafe-name h3">The Lavender cafe</p>-->
+<!--    </a>-->
+<!--    <ul class="nav-links">-->
+<!--        <li>-->
+<!--            <a href="#" class="active">-->
+<!--                <i class='bx bx-grid-alt' ></i>-->
+<!--                <span class="links-name">Dashboard</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="add_item.html">-->
+<!--                <i class='bx bx-add-to-queue' ></i>-->
+<!--                <span class="links-name">Add menu item</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-box' ></i>-->
+<!--                <span class="links-name">Product</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-list-ul' ></i>-->
+<!--                <span class="links-name">Order list</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="user_list.html">-->
+<!--                <i class='bx bx-user' ></i>-->
+<!--                <span class="links-name">User list</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-pie-chart-alt-2' ></i>-->
+<!--                <span class="links-name">Analytics</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-coin-stack' ></i>-->
+<!--                <span class="links-name">Stock</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-book-alt' ></i>-->
+<!--                <span class="links-name">Total order</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-user' ></i>-->
+<!--                <span class="links-name">Team</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-message' ></i>-->
+<!--                <span class="links-name">Messages</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-cog' ></i>-->
+<!--                <span class="links-name">Setting</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li class="log-out">-->
+<!--            <a href="#">-->
+<!--                <i class='bx bx-log-out'></i>-->
+<!--                <span class="links-name">Log out</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</div>-->
+<!--<section class="home-section">-->
+<!--    <nav>-->
+<!--        <div class="sidebar-button">-->
+<!--            <i class='bx bx-menu sidebarBtn'></i>-->
+<!--            <span class="dashboard h3">Add menu item</span>-->
+<!--        </div>-->
+<!--        <div class="search-box">-->
+<!--            <input type="text" placeholder="Search...">-->
+<!--            <i class='bx bx-search' ></i>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--    <div class="form-container">-->
+<!--        <div class="title">Item info</div>-->
+<!--        <div class="content">-->
+<!--            <form id="add-item-form" action="#">-->
+<!--                <div class="user-details">-->
+<!--                    <div class="input-box">-->
+<!--                        <label>-->
+<!--                            <input id="name" type="text" placeholder="Enter item name" class='input-field full-width no-border' required>-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <div class="input-box">-->
+<!--                        <label>-->
+<!--                            <input id="description" type="text" placeholder="Enter item description" class='input-field full-width no-border' required>-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <div class="input-box">-->
+<!--                        <label>-->
+<!--                            <input id="weight" type="text" placeholder="Enter item weight" class='input-field full-width no-border' required>-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <div class="input-box">-->
+<!--                        <label>-->
+<!--                            <input id="price" type="text" placeholder="Enter item price" class='input-field full-width no-border' required>-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <div class="input-box">-->
+<!--                        <label>-->
+<!--                            <input id="percent" type="text" placeholder="Enter percent" class='input-field full-width no-border' required>-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <div class="input-box">-->
+<!--                        <label>-->
+<!--                            <input id="availability" type="text" placeholder="Enter number of available items" class='input-field full-width no-border' required>-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <div class="upload-photo input-box">-->
+<!--                        <input type="file" name="pic" />-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="center-btn"><button type="submit" class='primary-btn'>Add item</button></div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <script src="add_item.js"></script>-->
+<!--</section>-->
+<!--<script>-->
+<!--    let sidebar = document.querySelector(".sidebar");-->
+<!--    let sidebarBtn = document.querySelector(".sidebarBtn");-->
+<!--    sidebarBtn.onclick = function() {-->
+<!--        sidebar.classList.toggle("active");-->
+<!--        if(sidebar.classList.contains("active")){-->
+<!--            sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");-->
+<!--        }else-->
+<!--            sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+<!--&lt;!&ndash; FOOTER &ndash;&gt;-->
+<!--<footer>-->
+<!--    <div class="footer-bottom">-->
+<!--        <p class="simple-text h5">© Copyright 2023 The Lavender Cafe. All rights reserved. Designed by Khrystyna Dolynska</p>-->
+<!--    </div>-->
+<!--</footer>-->
+<!--</html>-->
 

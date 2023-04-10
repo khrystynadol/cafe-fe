@@ -26,25 +26,26 @@
 <div class="form-container"> <!-- login-container -->
     <div class="title">Login</div>
     <div class="content">
-        <form action="#">
+        <form id="login-form" action="#">
             <div class="user-details">
                 <div class="input-box-login input-box">
 <!--                    <span class="details">Email</span>-->
                     <label>
-                        <input type="email" placeholder="Enter your email" class='input-field full-width no-border' required>
+                        <input id="email" type="email" placeholder="Enter your email" class='input-field full-width no-border' required>
                     </label>
                 </div>
                 <div class="input-box-login input-box">
 <!--                    <span class="details">Password</span>-->
                     <label>
-                        <input type="password" placeholder="Enter your password" class='input-field full-width no-border' required>
+                        <input id="password" type="password" placeholder="Enter your password" class='input-field full-width no-border' required>
                     </label>
                 </div>
             </div>
-            <div class="center-btn"><button class='primary-btn'>Login</button></div>
+            <div class="center-btn"><button type="submit" class='primary-btn'>Login</button></div>
             <div class='form-spacing'>Haven't registered yet? <a href="registration.html"><span class='form-highlight'>Sign up</span></a></div>
         </form>
     </div>
+    <script src="./login.js"></script>
 </div>
 <!--<div class='form-bold-line'></div>-->
 <!--<div class='form-container'>-->

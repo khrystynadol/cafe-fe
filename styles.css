@@ -161,6 +161,15 @@ img {
   margin-bottom: 10px;
 }
 
+.ingredient-btn {
+  margin-right: 200px;
+}
+
+@media (max-width: 584px) {
+  .ingredient-btn {
+    margin-right: 100px;
+  }
+}
 .no-border {
   border: none;
 }
@@ -1316,6 +1325,32 @@ form .button input:hover {
   background: linear-gradient(#8357E8, #c5b6e8);
 }
 
+.title-2 {
+  font-size: 20px !important;
+  font-weight: 300;
+  position: relative;
+  margin-right: 400px;
+}
+
+.title-2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #8357E8, #c5b6e8);
+}
+
+.ingredient .input-box {
+  height: 100%;
+  width: calc(100% - 15px) !important;
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 150px !important;
+}
+
 @media (max-width: 584px) {
   .form-container {
     max-width: 100%;
@@ -1334,6 +1369,10 @@ form .button input:hover {
   .user-details::-webkit-scrollbar {
     width: 5px;
   }
+  .ingredient .input-box {
+    width: 100% !important;
+    margin-right: 10px !important;
+  }
 }
 @media (max-width: 459px) {
   .form-container .content .category {
@@ -1342,15 +1381,20 @@ form .button input:hover {
 }
 /* Add menu item */
 .upload-photo {
-  margin-right: 50px;
+  margin-right: 200px;
 }
 
+@media (max-width: 584px) {
+  .upload-photo {
+    margin-right: 100px;
+  }
+}
 .new-line {
   margin-right: 200px !important;
 }
 
 .upload-photo {
-  margin-left: 14px;
+  margin-left: 10px;
 }
 
 /* User listing */
