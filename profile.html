@@ -23,6 +23,15 @@
     <div class="nav-toggler"><i class="ri-menu-fill"></i></div>
   </div>
 </nav>
+<script>
+  function logout() {
+    // Remove email and password from localStorage
+    localStorage.removeItem('email');
+    localStorage.removeItem('password');
+    localStorage.removeItem('id');
+    window.location.href = 'index.html';
+  }
+</script>
 <body>
 <div class="profile-card">
   <div class="card">
@@ -34,49 +43,39 @@
         <tr>
           <td class="h5">Name</td>
           <td class="h5">:</td>
-          <td class="h5">John</td>
+          <td id="name" class="h5"></td>
         </tr>
         <tr>
           <td class="h5">Surname</td>
           <td class="h5">:</td>
-          <td class="h5">Smith</td>
+          <td id="surname" class="h5"></td>
         </tr>
         <tr>
           <td class="h5">Email</td>
           <td class="h5">:</td>
-          <td class="h5">johnsmith@example.com</td>
+          <td id="email" class="h5"></td>
         </tr>
         <tr>
           <td class="h5">Phone</td>
           <td class="h5">:</td>
-          <td class="h5">123-456-7890</td>
+          <td id="phone" class="h5"></td>
         </tr>
         <tr>
           <td class="h5">Birth date</td>
           <td class="h5">:</td>
-          <td class="h5">27.03.2004</td>
+          <td id="birthdate" class="h5">27.03.2004</td>
         </tr>
         </tbody>
       </table>
       <div class="buttons">
-        <button class="primary-btn">Log Out</button>
+        <button id="logout-btn" class="primary-btn" onclick="logout()">Log Out</button>
         <button class="primary-btn red-btn">Delete Account</button>
       </div>
     </div>
   </div>
-<!--<div class="form-container">-->
-<!--  <h1>Profile</h1>-->
-<!--  <div class="user-info">-->
-<!--    <p><strong>Name:</strong> John</p>-->
-<!--    <p><strong>Surname:</strong> Smith</p>-->
-<!--    <p><strong>Email:</strong> johnsmith@example.com</p>-->
-<!--    <p><strong>Phone:</strong> 123-456-7890</p>-->
-<!--  </div>-->
-<!--  <div class="buttons">-->
-<!--    <button class="primary-btn">Log Out</button>-->
-<!--    <button class="primary-btn red-btn">Delete Account</button>-->
-<!--  </div>-->
 </div>
+<!--<script src="./registration.js" type="module"></script>-->
+<!--<script src="./logout.js" type="module"></script>-->
 </body>
 <!-- FOOTER -->
 <footer>

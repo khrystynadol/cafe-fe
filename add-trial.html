@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title> Add item </title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="gradient-body">
+<section class="home-section">
+  <div class="form-container">
+    <div class="title">Item info</div>
+    <div class="content">
+      <form id="add-item-form" action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <label>
+              <input id="name" type="text" placeholder="Enter item name" class='input-field full-width no-border' required>
+            </label>
+          </div>
+          <div class="input-box">
+            <label>
+              <input id="description" type="text" placeholder="Enter item description" class='input-field full-width no-border' required>
+              <!--<textarea id="description" name="description" placeholder="Write description.." style="height:200px"></textarea>-->
+            </label>
+          </div>
+          <div class="input-box">
+            <label>
+              <input id="weight" type="text" placeholder="Enter item weight" class='input-field full-width no-border' required>
+            </label>
+          </div>
+          <div class="input-box">
+            <label>
+              <input id="price" type="text" placeholder="Enter item price" class='input-field full-width no-border' required>
+            </label>
+          </div>
+          <div class="input-box">
+            <label>
+              <input id="percent" type="text" placeholder="Enter percent" class='input-field full-width no-border' required>
+            </label>
+          </div>
+          <div class="input-box">
+            <label>
+              <input id="availability" type="text" placeholder="Enter number of available items" class='input-field full-width no-border' required>
+            </label>
+          </div>
+
+          <div class="upload-photo input-box">
+            <input type="file" name="pic" />
+          </div>
+
+          <label class="title-2">Ingredients list:</label>
+          <div id="ingredient-list">
+            <div class="ingredient">
+              <div class="input-box">
+                <label>
+                  <input type="text" name="ingredient-name[]" class='input-field full-width no-border' placeholder="Enter name">
+                </label>
+              </div>
+              <div class="input-box">
+                <label>
+                  <input type="text" name="ingredient-weight[]" class='input-field full-width no-border' placeholder="Enter weight">
+                </label>
+              </div>
+              <button type="button" class="primary-btn secondary-btn">-</button>
+            </div>
+          </div>
+          <span id="add-ingredient" class="primary-btn secondary-btn ingredient-btn">Add Ingredient</span>
+        </div>
+        <div class="center-btn"><button type="submit" class='primary-btn'>Add item</button></div>
+      </form>
+    </div>
+  </div>
+  <script src="add-trial.js"></script>
+<!--  <script src="add_item.js"></script>-->
+</section>
+</body>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <p class="simple-text h5">© Copyright 2023 The Lavender Cafe. All rights reserved. Designed by Khrystyna Dolynska</p>
+  </div>
+</footer>
+</html>
