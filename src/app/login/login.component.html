@@ -1,0 +1,23 @@
+<div class="form-container gradient-body" (submit)="onSubmit()"> <!-- login-container -->
+  <div class="title">Login</div>
+  <div class="content">
+    <form id="login-form" action="#">
+      <div class="user-details">
+        <div class="input-box-login input-box">
+          <!--                    <span class="details">Email</span>-->
+          <label>
+            <input id="email" type="email" (input)="onUpdateEmail($event)" placeholder="Enter your email" class='input-field full-width no-border' required>
+          </label>
+        </div>
+        <div class="input-box-login input-box">
+          <!--                    <span class="details">Password</span>-->
+          <label>
+            <input id="password" type="password" (input)="onUpdatePassword($event)" placeholder="Enter your password" class='input-field full-width no-border' required>
+          </label>
+        </div>
+      </div>
+      <div class="center-btn"><button type="submit" class='primary-btn'>Login</button></div>
+      <div class='form-spacing'>Haven't registered yet? <a><span class='form-highlight'>Sign up</span></a></div>
+    </form>
+  </div>
+</div>

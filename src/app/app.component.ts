@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cafe-spa';
+
+  get isLoggedIn(): boolean {
+    return !!localStorage.getItem('id');
+  }
+
+  get isClient(): boolean {
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    return userData && userData.role === 'client';
+  }
+
+  get isAdmin(): boolean {
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    return userData && userData.role === 'admin';
+  }
+
 }

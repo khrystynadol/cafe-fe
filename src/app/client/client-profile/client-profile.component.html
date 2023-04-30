@@ -1,0 +1,66 @@
+<app-client-navigation></app-client-navigation>
+<div class="profile-card">
+  <div class="card">
+    <div class="card-body" *ngIf="profile">
+      <i class="ri-edit-box-line edit"></i>
+      <table>
+        <tbody>
+        <h2>Profile</h2>
+        <tr>
+          <td class="h5">Name</td>
+          <td class="h5">:</td>
+          <td id="name" class="h5">{{ profile.name }}</td>
+        </tr>
+        <tr>
+          <td class="h5">Surname</td>
+          <td class="h5">:</td>
+          <td id="surname" class="h5">{{ profile.surname }}</td>
+        </tr>
+        <tr>
+          <td class="h5">Email</td>
+          <td class="h5">:</td>
+          <td id="email" class="h5">{{ profile.email }}</td>
+        </tr>
+        <tr>
+          <td class="h5">Phone</td>
+          <td class="h5">:</td>
+          <td id="phone" class="h5">{{ profile.phone }}</td>
+        </tr>
+        <tr>
+          <td class="h5">Birth date</td>
+          <td class="h5">:</td>
+          <td id="birthdate" class="h5">27.03.2004</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button class="primary-btn" (click)="logout()">Log Out</button>
+        <button class="primary-btn red-btn">Delete Account</button>
+      </div>
+    </div>
+    <div *ngIf="!profile">
+      <p>Loading profile data...</p>
+    </div>
+  </div>
+</div>
+
+<!--<div class="profile-back">-->
+<!--  <div class="container">-->
+<!--    <div class="profile-card">-->
+<!--      <h1>Profile</h1>-->
+<!--      <div *ngIf="profile">-->
+<!--        <p><strong>Name:</strong> {{ profile.name }}</p>-->
+<!--        <p><strong>Surname:</strong> {{ profile.surname }}</p>-->
+<!--        <p><strong>Email:</strong> {{ profile.email }}</p>-->
+<!--        <p><strong>Phone:</strong> {{ profile.phone }}</p>-->
+<!--        <div class="buttons">-->
+<!--          <button id="logout-btn" class="primary-btn" onclick="logout()">Log Out</button>-->
+<!--          <button class="primary-btn red-btn">Delete Account</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div *ngIf="!profile">-->
+<!--        <p>Loading profile data...</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

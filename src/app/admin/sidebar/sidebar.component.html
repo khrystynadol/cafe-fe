@@ -1,0 +1,79 @@
+<head>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div class="sidebar">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="">
+    <p class="cafe-name h3">The Lavender cafe</p>
+  </a>
+  <ul class="nav-links">
+    <li>
+      <a routerLink="/admin" class="active">
+        <i class='bx bx-grid-alt' ></i>
+        <span class="links-name h2">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a >
+        <i class='bx bx-add-to-queue' ></i>
+        <span class="links-name">Add menu item</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/product">
+        <i class='bx bx-box' ></i>
+        <span class="links-name">Product</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/custom">
+        <i class='bx bx-list-ul' ></i>
+        <span class="links-name">Order list</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/users">
+        <i class='bx bx-user' ></i>
+        <span class="links-name">User list</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-pie-chart-alt-2' ></i>
+        <span class="links-name">Analytics</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-coin-stack' ></i>
+        <span class="links-name">Stock</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-book-alt' ></i>
+        <span class="links-name">Total order</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-message' ></i>
+        <span class="links-name">Messages</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="links-name">Setting</span>
+      </a>
+    </li>
+    <li class="log-out">
+      <a (click)="logout()">
+        <i class='bx bx-log-out'></i>
+        <span class="links-name">Log out</span>
+      </a>
+    </li>
+  </ul>
+</div>
+

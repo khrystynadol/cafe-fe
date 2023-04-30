@@ -1,0 +1,53 @@
+<app-sidebar></app-sidebar>
+
+<div class="admin-container">
+  <app-navigation></app-navigation>
+  <ng-container *ngIf="products.length > 0; else noCustoms">
+    <div class="home-content">
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Product list</div>
+          <div class="sales-details">
+            <ul>
+              <li class="topic">Name</li>
+              <ng-container *ngFor="let product of products">
+                <ul class="details dark-text">
+                  <li>{{product.name}}</li>
+                </ul>
+              </ng-container>
+            </ul>
+            <ul>
+              <li class="topic">Price</li>
+              <ng-container *ngFor="let product of products">
+                <ul class="details dark-text">
+                  <li>{{product.price}}</li>
+                </ul>
+              </ng-container>
+            </ul>
+            <ul>
+              <li class="topic">Weight</li>
+              <ng-container *ngFor="let product of products">
+                <ul class="details dark-text">
+                  <li>{{product.weight}}</li>
+                </ul>
+              </ng-container>
+            </ul>
+          </div>
+          <div class="right-btn"><button class='primary-btn'>See all</button></div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #noCustoms>
+    <div class="home-content">
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">User list</div>
+          <ul class="dark-text">
+            <li>No customs found.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>

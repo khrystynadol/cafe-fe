@@ -1,0 +1,72 @@
+<app-sidebar></app-sidebar>
+
+<div class="admin-container">
+  <app-navigation></app-navigation>
+  <ng-container *ngIf="customs.length > 0; else noCustoms">
+    <div class="home-content">
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Custom list</div>
+          <div class="sales-details">
+            <ul>
+              <li class="topic">Name</li>
+              <ng-container *ngFor="let custom of customs">
+                <ul class="details dark-text">
+                  <li>{{custom.name}}</li>
+                </ul>
+              </ng-container>
+            </ul>
+            <ul>
+              <li class="topic">Description</li>
+              <ng-container *ngFor="let custom of customs">
+                <ul class="details dark-text">
+                  <li>{{custom.description}}</li>
+                </ul>
+              </ng-container>
+            </ul>
+            <ul>
+              <li class="topic">Price</li>
+              <ng-container *ngFor="let custom of customs">
+                <ul class="details dark-text">
+                  <li>{{custom.price}}</li>
+                </ul>
+              </ng-container>
+            </ul>
+          </div>
+          <div class="right-btn"><button class='primary-btn'>See all</button></div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #noCustoms>
+    <div class="home-content">
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Custom list</div>
+          <ul class="dark-text">
+            <li>No customs found.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>
+
+
+<!--<table>-->
+<!--  <thead>-->
+<!--  <tr>-->
+<!--    <th>Name</th>-->
+<!--    <th>Description</th>-->
+<!--    <th>Price</th>-->
+<!--  </tr>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<!--  <tr *ngFor="let custom of customs">-->
+<!--    <td>{{custom.name}}</td>-->
+<!--    <td>{{custom.description}}</td>-->
+<!--    <td>{{custom.price}}</td>-->
+<!--  </tr>-->
+<!--  </tbody>-->
+<!--</table>-->
+
