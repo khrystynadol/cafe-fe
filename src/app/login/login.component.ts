@@ -10,6 +10,7 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 export class LoginComponent {
   SERVER_ADDRESS = 'http://127.0.0.1:5000';
 
+  errorMessage: string;
   email = "";
   password = "";
 
@@ -22,8 +23,10 @@ export class LoginComponent {
       "email": this.email,
       "password": this.password
     };
+
     const headers = new HttpHeaders({'Content-Type': 'application/json; charset=UTF-8'});
     console.log(data);
+
     this.http.post<any>(this.SERVER_ADDRESS + '/user/login', data, { headers }).subscribe(
       response => {
         localStorage.setItem('email', this.email);
@@ -36,8 +39,14 @@ export class LoginComponent {
         }
       },
       error => {
-        console.error('Error:', error);
-        alert('Login failed.');
+        if (error.status === 412) {
+          this.errorMessage = 'Email or password is incorrect';
+        }
+        else {
+          this.errorMessage = 'Login failed for some unknown reason';
+        }
+        // console.error('Error:', error);
+        // alert('Login failed.');
       }
     );
   }

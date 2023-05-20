@@ -13,6 +13,7 @@ const SERVER_ADDRESS = 'http://127.0.0.1:5000';
 })
 
 export class MenuComponent implements OnInit {
+  itemAv: string;
   token: string;
   menuItems: any[] = [];
 
@@ -64,6 +65,16 @@ export class MenuComponent implements OnInit {
       const itemDescription = this.renderer.createElement('p');
       this.renderer.setAttribute(itemDescription, 'class', 'simple-text h5');
 
+      const itemPrice = this.renderer.createElement('p');
+      this.renderer.setAttribute(itemPrice, 'class', 'h5');
+      if (!!item.availability) {
+        this.itemAv = "yes";
+      }
+      else {
+        this.itemAv = "no";
+      }
+      itemPrice.textContent = `Price: ${item.price}₴  |  Weight: ${item.weight}g  |  Available: ${this.itemAv}`;
+
       menuImage.src = '';
 
       this.http.get<any>(`${SERVER_ADDRESS}/image/${item.id}`, {
@@ -86,6 +97,9 @@ export class MenuComponent implements OnInit {
       menuItem.appendChild(menuImage);
       menuContent.appendChild(itemName);
       menuContent.appendChild(itemDescription);
+      if (!!localStorage.getItem('email')) {
+        menuContent.appendChild(itemPrice);
+      }
       menuItem.appendChild(menuContent);
 
       if ((numItems + 1) % 4 === 1) {
@@ -221,4 +235,3 @@ export class MenuComponent implements OnInit {
 //     }
 //   }
 // }
-

@@ -10,9 +10,10 @@ import {MenuComponent} from "./menu/menu.component";
 import {CustomListComponent} from "./custom-list/custom-list.component";
 import {ProductComponent} from "./admin/product/product.component";
 import {AdminUsersComponent} from "./admin/admin-users/admin-users.component";
+import {RegistrationComponent} from "./registration/registration.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'client', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'client', component: ClientComponent },
   { path: 'admin', component: AdminComponent },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'custom', component: CustomListComponent },
   { path: 'product', component: ProductComponent },
-  { path: 'users', component: AdminUsersComponent }
+  { path: 'users', component: AdminUsersComponent },
+  { path: 'register', component: RegistrationComponent }
 ];
 
 @NgModule({

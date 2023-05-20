@@ -12,5 +12,10 @@ export class ClientNavigationComponent {
     const url = this.router.url;
     return url.includes('/profile') || url.includes('/menu');
   }
+  isLoggedIn(): boolean {
+    const email = localStorage.getItem('email');
+    const password = localStorage.getItem('password');
+    return email !== null && password !== null;
+  }
 
 }

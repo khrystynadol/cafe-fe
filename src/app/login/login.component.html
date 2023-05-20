@@ -17,7 +17,9 @@
         </div>
       </div>
       <div class="center-btn"><button type="submit" class='primary-btn'>Login</button></div>
-      <div class='form-spacing'>Haven't registered yet? <a><span class='form-highlight'>Sign up</span></a></div>
+      <div *ngIf="errorMessage"  class='form-errors form-spacing h6'>{{ errorMessage }}</div>
+      <div class='form-spacing'>Haven't registered yet? <a routerLink="/register"><span class='form-highlight'>Sign up</span></a></div>
+      <div class='form-spacing'><a><span class='form-highlight'>Restore password</span></a></div>
     </form>
   </div>
 </div>

@@ -6,7 +6,8 @@
     <li><a routerLink="/menu" class="nav-item">Menu</a></li>
     <li><a class="nav-item">About</a></li>
     <li><a class="nav-item">Contact</a></li>
-    <li><a routerLink="/profile" class="nav-item">Profile</a></li>
+    <li *ngIf="isLoggedIn()"><a routerLink="/profile" class="nav-item">Profile</a></li>
+    <li *ngIf="!isLoggedIn()"><a routerLink="/login" class="nav-item">Log in</a></li>
   </ul>
   <div class="nav-toggler"><i class="ri-menu-fill"></i></div>
 </div>

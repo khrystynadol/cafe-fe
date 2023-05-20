@@ -1,1 +1,121 @@
-<p>registration works!</p>
+<div class="form-container gradient-body">
+  <div class="title">Registration</div>
+  <div class="content">
+    <form id="registration-form" action="#" (ngSubmit)="onAddUser(f)" #f="ngForm">
+      <div class="user-details">
+        <div class="input-box">
+          <label>
+            <input id="name" type="text" placeholder="Enter your name"
+                   name="name" ngModel
+                   class='input-field full-width no-border'
+                   required
+                   pattern="^[A-Z]+[a-z]{4,20}$"
+                   #nameInput="ngModel">
+            <div *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched)">
+              <div *ngIf="nameInput.errors.required" class="form-errors h6">
+                Name is required.
+              </div>
+              <div *ngIf="nameInput.errors.pattern" class="form-errors h6">
+                Name must start with a capital letter, contain only letters and have length between 5 and 20 symbols.
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="input-box">
+          <label>
+            <input id="surname" type="text" placeholder="Enter your surname"
+                   name="surname" ngModel
+                   class='input-field full-width no-border'
+                   required
+                   pattern="^[A-Z]+[a-z]{4,20}$"
+                   #surnameInput="ngModel">
+            <div *ngIf="surnameInput.invalid && (surnameInput.dirty || surnameInput.touched)">
+              <div *ngIf="surnameInput.errors.required" class="form-errors h6">
+                Surname is required.
+              </div>
+              <div *ngIf="surnameInput.errors.pattern" class="form-errors h6">
+                Surname must start with a capital letter, contain only letters and have length between 5 and 20 symbols.
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="input-box">
+          <label>
+            <input id="email" type="email" placeholder="Enter your email"
+                   name="email" ngModel
+                   class='input-field full-width no-border'
+                   required
+                   pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                   #emailInput="ngModel">
+            <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)">
+              <div *ngIf="emailInput.errors.required" class="form-errors h6">
+                Email is required.
+              </div>
+              <div *ngIf="emailInput.errors.pattern" class="form-errors h6">
+                Email is invalid.
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="input-box">
+          <label>
+            <input id="phone" type="text" placeholder="Enter your phone number"
+                   name="phone" ngModel
+                   class='input-field full-width no-border'
+                   required
+                   pattern="^[0-9]{10,10}$"
+                   #phoneInput="ngModel">
+            <div *ngIf="phoneInput.invalid && (phoneInput.dirty || phoneInput.touched)">
+              <div *ngIf="phoneInput.errors.required" class="form-errors h6">
+                Phone number is required.
+              </div>
+              <div *ngIf="phoneInput.errors.pattern" class="form-errors h6">
+                Phone number is invalid.
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="input-box">
+          <label>
+            <input id="password" type="password" placeholder="Enter your password"
+                   name="password" ngModel
+                   class='input-field full-width no-border'
+                   pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$"
+                   required
+                   #passwordInput="ngModel">
+            <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)">
+              <div *ngIf="passwordInput.errors.required" class="form-errors h6">
+                Password is required.
+              </div>
+              <div *ngIf="passwordInput.errors.pattern" class="form-errors h6">
+                Password must be at least 5 characters long and contain at least one letter and one number.
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="input-box">
+          <label>
+            <input type="password" placeholder="Confirm your password"
+                   name="password2" ngModel
+                   class='input-field full-width no-border'
+                   pattern="{{passwordInput.value}}"
+                   required
+                   #password2Input="ngModel"
+            >
+            <div *ngIf="password2Input.invalid && (password2Input.dirty || password2Input.touched)">
+              <div *ngIf="password2Input.errors.required" class="form-errors h6">
+                Password confirmation is required.
+              </div>
+              <div *ngIf="password2Input.errors.pattern" class="form-errors h6">
+                Passwords do not match.
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="center-btn"><button [disabled]="!f.valid" type="submit" class='primary-btn btn'>Register</button></div>
+      <div *ngIf="errorMessage"  class='form-errors form-spacing h6'>{{ errorMessage }}</div>
+      <div class='form-spacing'>Already registered? <a routerLink="/login"><span class='form-highlight'>Log in</span></a></div>
+    </form>
+  </div>
+</div>
