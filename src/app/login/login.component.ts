@@ -14,7 +14,7 @@ export class LoginComponent {
   email = "";
   password = "";
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, public router: Router) { }
 
   ngOnInit() {}
 

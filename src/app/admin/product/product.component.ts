@@ -9,9 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class ProductComponent implements OnInit {
   products: any[] = [];
   token = btoa(`${localStorage.getItem('email')}:${localStorage.getItem('password')}`);
-
   constructor(private http: HttpClient) { }
-
   ngOnInit(): void {
     this.fetchProducts();
   }
@@ -28,6 +26,5 @@ export class ProductComponent implements OnInit {
       console.error('Error fetching products:', error);
     });
   }
-
 }
 

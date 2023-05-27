@@ -1,4 +1,5 @@
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+// import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -6,21 +7,21 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-  isSidebarActive = false;
+  // isSidebarActive = false;
+  // constructor(private el: ElementRef, private renderer: Renderer2) {}
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
-  toggleSidebar() {
-    const sidebar = this.el.nativeElement.querySelector('.sidebar');
-    this.renderer.addClass(sidebar, 'active');
-    this.isSidebarActive = !this.isSidebarActive;
-
-    const sidebarBtn = this.el.nativeElement.querySelector('.sidebarBtn i');
-    if (this.isSidebarActive) {
-      this.renderer.removeClass(sidebarBtn, 'bx-menu');
-      this.renderer.addClass(sidebarBtn, 'bx-menu-alt-right');
-    } else {
-      this.renderer.removeClass(sidebarBtn, 'bx-menu-alt-right');
-      this.renderer.addClass(sidebarBtn, 'bx-menu');
-    }
-  }
+  // toggleSidebar() {
+  //   const sidebar = this.el.nativeElement.querySelector('.sidebar');
+  //   this.renderer.addClass(sidebar, 'active');
+  //   this.isSidebarActive = !this.isSidebarActive;
+  //
+  //   const sidebarBtn = this.el.nativeElement.querySelector('.sidebarBtn i');
+  //   if (this.isSidebarActive) {
+  //     this.renderer.removeClass(sidebarBtn, 'bx-menu');
+  //     this.renderer.addClass(sidebarBtn, 'bx-menu-alt-right');
+  //   } else {
+  //     this.renderer.removeClass(sidebarBtn, 'bx-menu-alt-right');
+  //     this.renderer.addClass(sidebarBtn, 'bx-menu');
+  //   }
+  // }
 }

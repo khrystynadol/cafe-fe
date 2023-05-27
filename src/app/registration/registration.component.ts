@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import {Router} from "@angular/router";
 
 const SERVER_ADDRESS = 'http://127.0.0.1:5000';
 
@@ -10,19 +11,20 @@ const SERVER_ADDRESS = 'http://127.0.0.1:5000';
   styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
   user = {
     surname: ''
   };
   submitted = false;
   errorMessage: string;
 
-  onAddUser(form: NgForm) {
+  onAddUser(form: NgForm, event: Event) {
+    event.preventDefault(); // Prevent form submission and page reload
     this.submitted = true;
 
-    if (form.invalid) {
-      return;
-    }
+  if (form.invalid) {
+    return;
+  }
 
     const name = form.value.name;
     const surname = form.value.surname;
@@ -46,7 +48,7 @@ export class RegistrationComponent {
         localStorage.setItem("password", password);
         localStorage.setItem("id", response.id);
         console.log(response);
-        window.location.href = "index.html";
+        this.router.navigate(['/']);
       },
       (error) => {
         if (error.status === 409) {
@@ -62,7 +64,6 @@ export class RegistrationComponent {
         // alert("Registration failed.");
       }
     );
-
   }
 }
 

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+// import { NgxSocketIoModule } from 'ngx-socket-io';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -22,6 +23,7 @@ import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { ProductComponent } from './admin/product/product.component';
 import { NavigationComponent } from './admin/navigation/navigation.component';
 import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
+import { ChunkPipe } from "./menu/chunk.pipe";
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
     SidebarComponent,
     ProductComponent,
     NavigationComponent,
-    AdminUsersComponent
+    AdminUsersComponent,
+    ChunkPipe
   ],
   imports: [
     BrowserModule,
