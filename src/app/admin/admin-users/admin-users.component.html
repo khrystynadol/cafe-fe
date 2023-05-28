@@ -2,7 +2,7 @@
 
 <div class="admin-container">
   <app-navigation></app-navigation>
-  <ng-container *ngIf="users.length > 0; else noCustoms">
+  <ng-container *ngIf="users.length > 0; else noUsers">
     <div class="home-content">
       <div class="sales-boxes">
         <div class="recent-sales box">
@@ -45,8 +45,9 @@
               <ng-container *ngFor="let user of users">
                 <ul class="details dark-text">
                   <li>
-                    <ng-container *ngIf="user.role === 'PersonStatus.manager'">manager</ng-container>
-                    <ng-container *ngIf="user.role === 'PersonStatus.client'">client</ng-container>
+                    {{user.role}}
+                        <!--<ng-container *ngIf="user.role === 'PersonStatus.manager'">manager</ng-container>-->
+                        <!--<ng-container *ngIf="user.role === 'PersonStatus.client'">client</ng-container>-->
                   </li>
                 </ul>
               </ng-container>
@@ -57,7 +58,7 @@
       </div>
     </div>
   </ng-container>
-  <ng-template #noCustoms>
+  <ng-template #noUsers>
     <div class="home-content">
       <div class="sales-boxes">
         <div class="recent-sales box">

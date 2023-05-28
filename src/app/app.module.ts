@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-// import { NgxSocketIoModule } from 'ngx-socket-io';
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -24,6 +24,8 @@ import { ProductComponent } from './admin/product/product.component';
 import { NavigationComponent } from './admin/navigation/navigation.component';
 import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
 import { ChunkPipe } from "./menu/chunk.pipe";
+
+const config: SocketIoConfig = { url: 'http://localhost:5000' };
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { ChunkPipe } from "./menu/chunk.pipe";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    SocketIoModule.forRoot(config)
   ],
   providers: [],
   bootstrap: [AppComponent]

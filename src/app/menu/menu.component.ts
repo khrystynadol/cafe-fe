@@ -120,4 +120,8 @@ export class MenuComponent implements OnInit {
       menuContainer.appendChild(grid);
     }
   }
+
+  // getImageUrl(itemId: number): string {
+  //   return `${SERVER_ADDRESS}/image/${itemId}`;
+  // }
 }
