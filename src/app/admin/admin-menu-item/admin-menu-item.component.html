@@ -1,0 +1,86 @@
+<app-sidebar></app-sidebar>
+<div class="admin-container">
+  <app-navigation></app-navigation>
+  <section class="add-item-content home-content">
+  <!--  <nav>-->
+  <!--    <div class="sidebar-button">-->
+  <!--      <i class='bx bx-menu sidebarBtn'></i>-->
+  <!--      <span class="dashboard h3">Add menu item</span>-->
+  <!--    </div>-->
+  <!--  </nav>-->
+  <div class="add-item-form form-container">
+    <div class="title">Item info</div>
+      <div class="content">
+        <form id="add-item-form" action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <label>
+                <input id="name" type="text" placeholder="Enter item name" class='input-field full-width no-border' required>
+              </label>
+            </div>
+            <div class="input-box">
+              <label>
+                <input id="description" type="text" placeholder="Enter item description" class='input-field full-width no-border' required>
+                <!--<textarea id="description" name="description" placeholder="Write description.." style="height:200px"></textarea>-->
+              </label>
+            </div>
+            <div class="input-box">
+              <label>
+                <input id="weight" type="text" placeholder="Enter item weight" class='input-field full-width no-border' required>
+              </label>
+            </div>
+            <div class="input-box">
+              <label>
+                <input id="price" type="text" placeholder="Enter item price" class='input-field full-width no-border' required>
+              </label>
+            </div>
+            <div class="input-box">
+              <label>
+                <input id="percent" type="text" placeholder="Enter percent" class='input-field full-width no-border' required>
+              </label>
+            </div>
+            <div class="input-box">
+              <label>
+                <input id="availability" type="text" placeholder="Enter number of available items" class='input-field full-width no-border' required>
+              </label>
+            </div>
+            <div class="input-box">
+              <label>
+                <input id="img-link" type="text" placeholder="Enter image link" class='input-field full-width no-border' required>
+              </label>
+            </div>
+            <!--                    <div class="upload-photo input-box">-->
+            <!--                        <input id="picture_data" type="file" name="picture_data" />-->
+            <!--                    </div>-->
+            <!--                    <form id="upload-photo">-->
+            <!--                        <input id="picture_data" type="file" name="picture_data" />-->
+            <!--                    </form>-->
+
+            <label class="title-2">Ingredients list:</label>
+            <div id="ingredient-list">
+              <div class="ingredient">
+                <div class="input-box">
+                  <label>
+                    <input type="text" name="ingredient-name[]" class='input-field full-width no-border' placeholder="Enter name">
+                  </label>
+                </div>
+                <div class="input-box">
+                  <label>
+                    <input type="text" name="ingredient-weight[]" class='input-field full-width no-border' placeholder="Enter weight">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <span type="click" id="add-ingredient" class="primary-btn secondary-btn ingredient-btn">Add Ingredient</span>
+          </div>
+          <div class="center-btn"><button type="submit" class='primary-btn'>Add item</button></div>
+          <!--                <form action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">-->
+          <!--                    <input id="picture_data" type="file" name="picture_data" />-->
+          <!--                    <input type="submit" class='primary-btn secondary-btn' value="Upload a file"/>-->
+          <!--                    <button type="button" class='primary-btn secondary-btn'>Upload photo</button>-->
+          <!--                </form>-->
+        </form>
+      </div>
+    </div>
+  </section>
+</div>

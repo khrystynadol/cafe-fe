@@ -24,6 +24,7 @@ import { ProductComponent } from './admin/product/product.component';
 import { NavigationComponent } from './admin/navigation/navigation.component';
 import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
 import { ChunkPipe } from "./menu/chunk.pipe";
+import { AdminMenuItemComponent } from './admin/admin-menu-item/admin-menu-item.component';
 
 const config: SocketIoConfig = { url: 'http://localhost:5000' };
 
@@ -47,7 +48,8 @@ const config: SocketIoConfig = { url: 'http://localhost:5000' };
     ProductComponent,
     NavigationComponent,
     AdminUsersComponent,
-    ChunkPipe
+    ChunkPipe,
+    AdminMenuItemComponent
   ],
   imports: [
     BrowserModule,
