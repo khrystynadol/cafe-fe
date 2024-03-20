@@ -1,5 +1,15 @@
 # CafeSpa
+## Project description
+The purpose of this project is to develop the client part of the system for a cafe. The system provides 2 types of users: a client and a manager. The client has the ability to create orders. The manager adds dishes, changes the status of the order (registered, deleted, etc.), adds products to the database, has access to all the data stored in the database. The result of the system is the ability to view the menu and information about the cafe for the client, as well as keep track of available products and dishes for the manager. The client part is developed on the basis of the finished server part. 
+The purpose of this work is to visualise the server side, create a user-friendly interface for users and provide them with a convenient way to place orders and interact with the cafe.
 
+## Functionality description
+![Main page of the website](https://1drv.ms/i/s!AsJr_cbbVoMUhtd9p790QCdplPY5gQ)
+An unauthorised user can log in, view the menu, information about us and our contacts. 
+Scrolling down the page, the user sees information about the cafe, contacts and a footer with navigation, logo and links to social media.
+
+
+## Project details
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
 ## Development server
