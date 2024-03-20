@@ -4,7 +4,7 @@ The purpose of this project is to develop the client part of the system for a ca
 The purpose of this work is to visualise the server side, create a user-friendly interface for users and provide them with a convenient way to place orders and interact with the cafe.
 
 ## Functionality description
-![Main page of the website](blob:https://photos.onedrive.com/0a0417ff-e8ee-4676-b5c3-86c85b09ca30)
+![Main page of the website](https://github.com/khrystynadol/cafe-fe/assets/106964524/285fa2e0-bf2b-4faa-b283-44ac0b20dac8)
 
 An unauthorised user can log in, view the menu, information about us and our contacts. 
 Scrolling down the page, the user sees information about the cafe, contacts and a footer with navigation, logo and links to social media.
