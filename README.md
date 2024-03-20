@@ -1,5 +1,6 @@
 # Lavender cafe
 View prototype by the following link: https://khrystynadol.github.io/cafe-fe/
+
 Latest version using Angular is on the lab-5-6 branch
 
 ### This site is for informational purposes for clients and employees of the institution
