@@ -1,23 +1,25 @@
 # Lavender cafe
+### View prototype by the following link: https://khrystynadol.github.io/cafe-fe/
+### Last version on Angular on the lab-5-6 branch
 
-### Даний сайт функціонує з інформаційною метою для клієнтів та працівників закладу
+### This site is for informational purposes for clients and employees of the institution
 
-## Клієнтська частина
-### Головна сторінка типу landing page містить такі підсторінки:
-1. Початкова сторінка з назвою кафе та навігацією
-2. Трішки інформації про заклад
-3. Контакти
-4. Футер (логотип, навігація, соцмережі)
-5. На окремій сторінці знаходиться меню кафе
+## Client part 
+### The main page of the landing page type contains the following subpages: 
+1. Home page with the name of the cafe and navigation
+2. A little information about the establishment
+3. Contacts
+4. Footer (logo, navigation, social networks)
+5. On a separate page is the cafe menu
 
-## Адмінська частина
-### Дана частина містить такі сторінки:
-1. Головна сторінка з невеличкою аналітикою
-2. Додавання нової страви чи напою меню
-3. Перегляд списку користувачів
-4. Перегляд списку замовлень
+## Administrative part 
+### This part contains the following pages: 
+1. Home page with a small analytics
+2. Adding a new dish or drink to the menu
+3. Viewing the list of users
+4. Viewing the list of orders
 
-## Для обох сторін:
-1. Логін
-2. Реєстрація
-3. Перегляд профілю
+## For both parties: 
+1. Login
+2. Registration
+3. View profile
