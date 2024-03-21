@@ -20,11 +20,11 @@ By going to the menu page, an unauthorised user can view the list of dishes and 
 
 ![Menu page](https://github.com/khrystynadol/cafe-fe/assets/106964524/d58470d5-7d7a-498e-805e-959d1cbc4365)
 
-To log in, the user should click on the "Log in" button in the navigation bar of the page. After that, they will be redirected to the login page, where the form is located. To log in, you need to enter your email and password. If the user has forgotten his password, he can recover it.
+To log in, the user should click on the "Log in" button in the navigation bar of the page. After that, they will be redirected to the login page, where the form is located. To log in, the user needs to enter your email and password. If the user has forgotten his password, he can recover it.
 
 ![Login form](https://github.com/khrystynadol/cafe-fe/assets/106964524/6304b5ce-f099-492e-b52a-e32479abd4b4)
 
-If you enter an incorrect email or password, an error message appears below the confirmation button.
+If the user enters an incorrect email or password, an error message appears below the confirmation button.
 
 ![Wrong login](https://github.com/khrystynadol/cafe-fe/assets/106964524/242608d0-f9a3-46ef-ad14-a658f9d69d79)
 
@@ -32,7 +32,7 @@ If a user is not registered, they can click on the "Sign up" text and be redirec
 
 ![Registration form](https://github.com/khrystynadol/cafe-fe/assets/106964524/a3066bb1-ff0c-48cd-b72a-347ea6cbfb76)
 
-To successfully register, you should enter the following information correctly: first name, last name, email address and telephone number. You will also need to enter a password and duplicate it. Each field in the form has its own validation. Until all fields are filled in correctly, the registration button will be blocked. If you enter incorrect data, you'll see what kind of error occurs.
+To successfully register, the user should enter the following information correctly: first name, last name, email address and telephone number. They will also need to enter a password and duplicate it. Each field in the form has its own validation. Until all fields are filled in correctly, the registration button will be blocked. If the user enters incorrect data, they'll see what kind of error occurs.
 
 ![Validation on registration](https://github.com/khrystynadol/cafe-fe/assets/106964524/bf625e9d-85e7-4976-80a2-ee54fcce18f5)
 
@@ -40,12 +40,12 @@ Fields are validated using regular expressions. For example, a correct first and
 
 ![Correctly filled registration form](https://github.com/khrystynadol/cafe-fe/assets/106964524/513749cb-2131-4c0e-8bbe-174a5848ff89)
 
-As you can see, we can now click the registration button, as all the data has been entered correctly.
+As you can see, the user can now click the registration button, as all the data has been entered correctly.
 
 ![Not unique email or phone](https://github.com/khrystynadol/cafe-fe/assets/106964524/f99aaf5f-7b80-4577-a07e-299fbf937240)
 
 If the user with the entered email or phone number is already registered, an error message appears below the registration button. If the user is already registered, they can go to the login page by clicking on the "Log in" text. 
-If you enter the correct data required for login or registration, you will be redirected to the main page. The navigation now allows you to view your profile, but you cannot log in.
+If the user enters the correct data required for login or registration, they will be redirected to the main page. The navigation now allows them to view their profile, but they cannot log in.
 
 ![Main page of authorized user](https://github.com/khrystynadol/cafe-fe/assets/106964524/3207143e-bb7d-4242-8ef6-7e73c35ff357)
 
@@ -61,12 +61,14 @@ On the menu page, the authorised user can see all the information they saw befor
 
 ![Manager login](https://github.com/khrystynadol/cafe-fe/assets/106964524/4d851c0f-b178-4363-9b94-4801349bac31)
 
-First of all, the manager must enter the correct email and password. After authorisation, the system returns the user's role. If the user is a manager, he or she is redirected to the main page of the administrative area.
+First of all, the manager should enter the correct email and password. After authorisation, the system returns the user's role. If the user is a manager, he or she is redirected to the main page of the administrative area.
 
 ![Manager dashboard](https://github.com/khrystynadol/cafe-fe/assets/106964524/93487a12-9e6d-42f0-ab91-3ab5417e8d30)
 
-On this page, you can view analytics, such as information about recent orders, best-selling products, income, and losses. There is also navigation to the administrative area on the left. 
+On this page, the manager can view analytics, such as information about recent orders, best-selling products, income, and losses. There is also navigation to the administrative area on the left. 
+
 The manager can: 
+
 - Add a dish or drink to the menu
   
   ![Add item form](https://github.com/khrystynadol/cafe-fe/assets/106964524/a72f54f0-3a1e-4bc0-ba8f-c18c567db0e7)
